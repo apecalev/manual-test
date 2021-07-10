@@ -1,0 +1,61 @@
+Action,Data,Expected Result
+Open the page,[http://automationpractice.com/|http://automationpractice.com],The page should display
+"Click ""sign in"" button",,"The page should display ""create an account"" and ""sign in"""
+"Enter your email address and password into sign in text field and click on ""sign in"" button","Email: [pechalev97@gmail.com|mailto:pechalev97@gmail.com] 
+
+Password: User111",The page should display login successful
+"Click on ""DRESSES"" button from the main page ",,"The page should display PLP and three subcategories : [CASUAL DRESSES|http://automationpractice.com/index.php?id_category=9&controller=category], [EVENING DRESSES|http://automationpractice.com/index.php?id_category=10&controller=category] and [SUMMER DRESSES|http://automationpractice.com/index.php?id_category=11&controller=category]"
+"Click on ""[CASUAL DRESSES|http://automationpractice.com/index.php?id_category=9&controller=category]"" button ",,The page should display PLP 
+Select Size ,Size: S,The page should display selected items
+Select Color,Color: orange,The page should display selected items
+Select Compositions ,Compositions: Cotton ,"The page should display selected items
+
+"
+Select Styles,Styles: Girly,The page should display selected items
+Select product ,"Printed Dress
+
+*Model* *demo_3*
+
+# Properties: Colorful Dress
+# Condition: New
+
+",The page shouThe page should display PDP
+"Click on ""add to cart"" button",,"The page should display Product successfully added to your shopping cart and ""Continue shopping"" or ""Proceed to checkout"""
+"Click on ""Proceed to checkout"" button",,The page should display SHOPPING-CART SUMMARY
+"Click on ""Proceed to checkout"" button",,The page should display YOUR DELIVERY ADDRESS
+"Check your delivery address :
+
+Name 
+
+Street
+
+City
+
+Zip code
+
+Country
+
+Phone 
+
+Click on ""Proceed to checkout"" button","* User User
+* 5th ave
+* Alabama city, Alabama 35004
+* United States
+* 123456789
+
+","The page should display Shipping and Terms of service and We get a message that says:
+
+*Choose a shipping option for this address: My address*"
+"Click on ""Proceed to checkout"" button ",,The page should display You must agree to the terms of service before continuing.
+"Click on ""[+(Read the Terms of Service+|http://automationpractice.com/index.php?id_cms=3&controller=cms&content_only=1]+)"" button+ ",,We get message that should display TERMS AND CONDITIONS OF USE
+"Click on ""close"" button
+
+Select *Terms of service* checkbox
+
+Click on ""Proceed to checkout"" button",Select: I agree to the terms of service and will adhere to them unconditionally.,"Pop-up of terms and conditions of use should be closed 
+
+The page should display Payment method 
+
+""Pay by bank wire"" or ""Pay by check"""
+"Click on ""Pay by check"" button ",,The page should display order summary and check payment
+"Click on ""I confirm my order"" button ",,The page should display order confirmation 
